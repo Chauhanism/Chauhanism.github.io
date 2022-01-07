@@ -1,0 +1,93 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/resumebutton_hover.png" type="Texture" id=1]
+[ext_resource path="res://assets/resumebutton_normal.png" type="Texture" id=2]
+[ext_resource path="res://assets/HeroImage.png" type="Texture" id=3]
+[ext_resource path="res://assets/Home_base.png" type="Texture" id=4]
+[ext_resource path="res://assets/resumebutton_pressed.png" type="Texture" id=5]
+[ext_resource path="res://assets/colorbase_BG.png" type="Texture" id=6]
+[ext_resource path="res://assets/aboutbutton_normal.png" type="Texture" id=7]
+[ext_resource path="res://assets/contactbutton_pressed.png" type="Texture" id=8]
+[ext_resource path="res://assets/aboutbutton_pressed.png" type="Texture" id=9]
+[ext_resource path="res://assets/portfoliobutton_pressed.png" type="Texture" id=10]
+[ext_resource path="res://assets/portfoliobutton_normal.png" type="Texture" id=11]
+[ext_resource path="res://assets/aboutbutton_hover.png" type="Texture" id=12]
+[ext_resource path="res://assets/contactbutton_normal.png" type="Texture" id=13]
+[ext_resource path="res://assets/contactbutton_hover.png" type="Texture" id=14]
+[ext_resource path="res://assets/portfoliobutton_hover.png" type="Texture" id=15]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BG" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI_base" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hero" type="TextureRect" parent="."]
+margin_left = 518.0
+margin_top = 182.0
+margin_right = 1749.0
+margin_bottom = 910.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resume" type="TextureButton" parent="."]
+margin_left = 56.5755
+margin_top = 55.9856
+margin_right = 402.576
+margin_bottom = 185.986
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="portfolio" type="TextureButton" parent="."]
+margin_left = 57.0
+margin_top = 204.0
+margin_right = 403.0
+margin_bottom = 325.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="about" type="TextureButton" parent="."]
+margin_left = 57.0
+margin_top = 326.362
+margin_right = 403.0
+margin_bottom = 390.362
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="contact" type="TextureButton" parent="."]
+margin_left = 57.0
+margin_top = 392.186
+margin_right = 403.0
+margin_bottom = 456.186
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
